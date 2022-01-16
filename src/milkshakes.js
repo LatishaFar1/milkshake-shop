@@ -25,6 +25,13 @@ const milkshakes = [{
     category: "Dessert",
     price: 7.00,
     img: "https://images.unsplash.com/photo-1624781740834-fbfbf5fd221a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
+},
+{
+    id: 5,
+    title: "Give me S'more",
+    category: "Dessert",
+    price: 11.00,
+    img: "https://images.unsplash.com/photo-1594488506255-a8bbfdeedbaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
 }
 ]
 
