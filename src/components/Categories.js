@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Categories() {
+export default function Categories({filterMilkshakes}) {
     return (
-        <div>
-            <h2>categories</h2>
+        <div className="btn-container">
+           <button className="filter-btn" onClick={()=> filterMilkshakes("Fruit")}>Fruit</button>
+           <button className="filter-btn" onClick={()=> filterMilkshakes("Dessert")}>Dessert</button>
         </div>
     )
 }

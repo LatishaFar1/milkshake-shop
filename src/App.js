@@ -11,7 +11,9 @@ function App() {
   const [menuItems, setMenuItems] = useState(milkshakes);
   const [categories, setCategories] = useState([]);
 
+
   function filterMilkshakes(category){
+    //if the milkshake category matches the category string you pass in, return that milkshake in the new milkshake array
     const newMilkshakes = milkshakes.filter((milkshake) => milkshake.category === category)
     setMenuItems(newMilkshakes)
   }
