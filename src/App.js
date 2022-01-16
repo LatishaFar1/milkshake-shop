@@ -14,14 +14,14 @@ function App() {
 
   return (
     <div className="App">
-      <div className="container-fluid">
+      <section className="menu section">
       <div className="title">
         <h2>menu:</h2>
         <div className="underline"></div>
-          <Menu />
+      </div>
+          <Menu milkshakes={menuItems} />
           <Categories />
-      </div>
-      </div>
+      </section>
     </div>
   );
 }
