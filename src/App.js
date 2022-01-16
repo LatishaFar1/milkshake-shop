@@ -11,6 +11,10 @@ function App() {
   const [menuItems, setMenuItems] = useState(milkshakes);
   const [categories, setCategories] = useState([]);
 
+  function filterMilkshakes(category){
+    const newMilkshakes = milkshakes.filter((milkshake) => milkshake.category === category)
+    setMenuItems(newMilkshakes)
+  }
 
   return (
     <div className="App">
@@ -20,7 +24,7 @@ function App() {
         <div className="underline"></div>
       </div>
           <Menu milkshakes={menuItems} />
-          <Categories />
+          <Categories filterMilkshakes = {filterMilkshakes}/>
       </section>
     </div>
   );
