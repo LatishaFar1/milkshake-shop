@@ -13,9 +13,14 @@ function App() {
 
 
   function filterMilkshakes(category){
+    if (category === "all"){
+      setMenuItems(milkshakes);
+      return;
+    }
+
     //if the milkshake category matches the category string you pass in, return that milkshake in the new milkshake array
-    const newMilkshakes = milkshakes.filter((milkshake) => milkshake.category === category)
-    setMenuItems(newMilkshakes)
+    const newMilkshakes = milkshakes.filter((milkshake) => milkshake.category === category);
+    setMenuItems(newMilkshakes);
   }
 
   return (
